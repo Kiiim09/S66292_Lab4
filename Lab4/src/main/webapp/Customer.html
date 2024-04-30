@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using JSP Scripting</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h2 {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Use JSP Sciplet and JSP Expression in application</h1>
+        <h2>Customer discount</h2>
+        
+        <form action="processCustomer.jsp" method="post">
+            <label for="customercode">Customer Code :</label>
+            <input type="number" id="customercode" name="customercode" placeholder="Key-in customer code"required><br><br>
+            
+            <label for="quantity">Quantity :</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Key-in quantity"required><br><br>
+            
+            <label>Customer Type:</label>
+                <ul id="custtype" name="custtype" required>
+                    <input type="radio" id="1" name="custtype" value="1" required><label for="normal">Normal Customer</label>
+                    <input type="radio" id="2" name="custtype" value="2" required><label for="privilege">Privilege Customer</label>
+                </ul>
+            
+            <button type="submit">Calculate</button>
+            <button ty[e="clear">Cancel</button>  
+        </form>
+    </body>
+</html>
